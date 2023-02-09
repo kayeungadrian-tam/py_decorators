@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "new-sklearn"
+version = "0.1.0"
+description = "aaaaa"
+authors = ["adrian <tamkayeung.adrian@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "new_sklearn" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+scikit-learn = "^1.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
