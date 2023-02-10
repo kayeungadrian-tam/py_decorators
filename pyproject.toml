@@ -1,14 +1,14 @@
 [tool.poetry]
-name = "new-sklearn"
-version = "0.1.0"
-description = "aaaaa"
+name = "python-deco"
+version = "0.2.1"
+description = ""
 authors = ["adrian <tamkayeung.adrian@gmail.com>"]
 readme = "README.md"
-packages = [{ include = "new_sklearn" }]
+packages = [{ include = "py_deco" }]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-scikit-learn = "^1.2.1"
+pytest = "^7.2.1"
 
 
 [build-system]
