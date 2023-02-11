@@ -11,6 +11,20 @@ Welcome to python-decos's documentation!
    :caption: Contents:
 
 
+Look how easy it is to use:
+
+    import project
+    # Get your stuff done
+    project.do_stuff()
+
+Features
+--------
+
+- Be awesome
+- Make things faster
+
+Installation
+------------
 
 Indices and tables
 ==================
