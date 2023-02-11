@@ -1,4 +1,4 @@
-from py_deco.deploy import inactive
+from py_deco.dev import inactive
 
 
 @inactive

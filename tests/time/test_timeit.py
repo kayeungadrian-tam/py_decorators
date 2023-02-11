@@ -1,5 +1,4 @@
 from py_deco.time import timeit
-from py_deco.deploy import inactive
 
 
 def hoge():
