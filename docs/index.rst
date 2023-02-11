@@ -7,15 +7,12 @@ Welcome to python-decos's documentation!
 ========================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
    :caption: Contents:
 
-
-Look how easy it is to use:
-
-    import project
-    # Get your stuff done
-    project.do_stuff()
+   installation
+   reference/index
+   examples/index
 
 Features
 --------
@@ -30,5 +27,3 @@ Indices and tables
 ==================
 
 * :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
