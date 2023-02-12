@@ -19,11 +19,11 @@ An OSS that has something to do with decorators in python
 
 # Example
 
-@timeie
+@timeit
 
 ```python
 from pyDeco.dev import inactive
-from pyDeco.time import timeie
+from pyDeco.time import timeit
 
 @timeit
 def func():
