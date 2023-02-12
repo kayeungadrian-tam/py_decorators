@@ -1,10 +1,8 @@
-.. module:: py_deco
-
 API Reference
 =============
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 4
 
     time
     debug

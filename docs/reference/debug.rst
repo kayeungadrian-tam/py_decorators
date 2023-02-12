@@ -13,8 +13,8 @@ A set of decorators that are related to debugging.
 
 The :func:`@inactive`  is a decorator that allows you to deactivate (temporaily) a function without modifying its code. It replaces the behavior of a function with a logging statement and the return of a list of :func:`None` if values are being returned.
 
-usage
-`````
+**usage**
+
 .. code-block:: python
 
     from time import sleep
@@ -26,6 +26,8 @@ usage
         sleep(1)
         
     func()
+
+**output**
 
 .. parsed-literal::
     pyDeco  | INFO | Function hoge3() took 0.5007 seconds.
@@ -36,8 +38,8 @@ usage
 ---------
 
 
-usage
-`````
+**usage**
+
 .. code-block:: python
 
     from time import sleep
@@ -49,6 +51,9 @@ usage
         sleep(1)
         
     func()
+
+**output**
+
 
 .. parsed-literal::
     pyDeco  | INFO | Function hoge3() took 0.5007 seconds.
@@ -59,8 +64,8 @@ usage
 -----------
 
 
-usage
-`````
+**usage**
+
 .. code-block:: python
 
     from time import sleep
@@ -73,6 +78,8 @@ usage
         
     func()
 
+
+**output**
 
 .. parsed-literal::
     pyDeco  | INFO | Function hoge3() took 0.5007 seconds.

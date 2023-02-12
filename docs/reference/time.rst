@@ -14,8 +14,8 @@ A set of decorators that are related to runtime.
 The :func:`timeit` function is a decorator that measures the runtime of a function and logs this information. It wraps the function with a new function that measures the runtime and logs the result.
 
 
-usage
-`````
+**usage**
+
 .. code-block:: python
 
     from time import sleep
@@ -28,8 +28,8 @@ usage
         
     func()
 
-output
-```````
+
+**output**
 
 .. parsed-literal::
     pyDeco  | INFO | Function hoge3() took 0.5007 seconds.

@@ -10,8 +10,7 @@ A set of decorators that are related to command line interface (CLI) arguments.
 
 The :func:`@cli_yaml` (and :func:`@cli_json` alike) provides a convenient way to read the contents of a YAML file and pass them as arguments to a function directly.
 
-usage
-`````
+**usage**
 
 `demo.yaml`
 
@@ -38,6 +37,7 @@ run command
 
     $ python demo.py --yaml ./demo.yaml
 
+**output**
 
 .. parsed-literal::
     adrian is 28 years old.

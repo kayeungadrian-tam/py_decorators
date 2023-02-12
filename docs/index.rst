@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to python-decos's documentation!
+Welcome to python-deco's documentation!
 ========================================
 
 .. toctree::
@@ -12,7 +12,9 @@ Welcome to python-decos's documentation!
 
    installation
    reference/index
-   examples/index
+
+Installation
+------------
 
 Features
 --------
@@ -20,8 +22,6 @@ Features
 - Be awesome
 - Make things faster
 
-Installation
-------------
 
 Indices and tables
 ==================
