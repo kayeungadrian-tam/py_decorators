@@ -1,8 +1,8 @@
 <div align="center">
 
 <h1> <strong>py</strong>thon <strong>Deco</strong>ractor<br>
-<img src="https://img.shields.io/badge/made%20with-LOVE-red?style=plastic">
-<img src="https://img.shields.io/badge/license-MIT-blue?style=plastic">
+<img src="https://img.shields.io/badge/made%20with-LOVE-red">
+<img src="https://img.shields.io/badge/license-MIT-blue">
 <a href='https://py-decorators.readthedocs.io/en/latest/?badge=latest'>
     <img src='https://readthedocs.org/projects/py-decorators/badge/?version=latest' alt='Documentation Status' />
 </a>
