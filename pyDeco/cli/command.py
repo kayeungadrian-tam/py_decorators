@@ -11,7 +11,7 @@ sys.path.insert(0, "../../")
 
 logger = util.init_logger(__name__)
 
-
+# Override argparse.ArgumentParser
 class ArgumentParser(argparse.ArgumentParser):
     def error(self, message):
         logger.error(
@@ -22,14 +22,12 @@ class ArgumentParser(argparse.ArgumentParser):
         self.exit(0)
 
 
-def add_yaml_arguments(parser):
-    parser.add_argument("--yaml", type=str, required=True, help="/path/to/file.yaml")
-
-
+# add --json to argparse for cli
 def add_json_arguments(parser):
     parser.add_argument("--json", type=str, required=True, help="/path/to/file.json")
 
 
+# read cli input parameters from json file
 def cli_json(arg_parser_func: callable = add_json_arguments):
     parser = ArgumentParser()
     arg_parser_func(parser)
@@ -57,6 +55,12 @@ def cli_json(arg_parser_func: callable = add_json_arguments):
     return read_json
 
 
+# add --yaml to argparse for cli
+def add_yaml_arguments(parser):
+    parser.add_argument("--yaml", type=str, required=True, help="/path/to/file.yaml")
+
+
+# read cli input parameters from yaml file
 def cli_yaml(arg_parser_func: callable = add_yaml_arguments):
     parser = ArgumentParser()
     arg_parser_func(parser)
@@ -82,24 +86,3 @@ def cli_yaml(arg_parser_func: callable = add_yaml_arguments):
         return wrapper
 
     return read_yaml
-
-
-# @command_line_decorator_factory(add_arguments)
-def hello(parsed_args, *args, **kwargs):
-    name = parsed_args.name
-    print(f"Hello, {name}!")
-
-
-# @cli_json()
-@cli_yaml()
-def hello2(infos: dict):
-
-    # print(args)
-    # print(kwargs)
-    # print(kwargs.get("name"))
-    print(infos)
-    # logger.info(f"{name}")
-
-
-if __name__ == "__main__":
-    hello2()

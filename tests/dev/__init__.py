@@ -1,3 +1,3 @@
-from .test_dev_utils import inactive
+from .test_dev import inactive
 
 __all__ = ["inactive"]

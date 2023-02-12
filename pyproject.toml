@@ -1,10 +1,13 @@
 [tool.poetry]
 name = "python-deco"
-version = "0.3.9"
+version = "0.3.11"
 description = ""
 authors = ["adrian <tamkayeung.adrian@gmail.com>"]
 readme = "README.md"
 packages = [{ include = "pyDeco" }]
+license = "LICENSE"
+repository = "https://github.com/kayeungadrian-tam/py_decorators"
+homepage = "https://py-decorators.readthedocs.io/en/latest/index.html"
 
 [tool.poetry.dependencies]
 python = "^3.10"
