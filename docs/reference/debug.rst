@@ -27,9 +27,6 @@ usage
         
     func()
 
-output
-```````
-
 .. parsed-literal::
     pyDeco  | INFO | Function hoge3() took 0.5007 seconds.
 
@@ -52,9 +49,6 @@ usage
         sleep(1)
         
     func()
-
-output
-```````
 
 .. parsed-literal::
     pyDeco  | INFO | Function hoge3() took 0.5007 seconds.
@@ -79,8 +73,6 @@ usage
         
     func()
 
-output
-```````
 
 .. parsed-literal::
     pyDeco  | INFO | Function hoge3() took 0.5007 seconds.

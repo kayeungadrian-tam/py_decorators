@@ -8,3 +8,4 @@ API Reference
 
     time
     debug
+    cli
