@@ -1,7 +1,7 @@
 Installation Guide
 ==================
 
-To install py_deco package, use `pip` as follows:
+To install :func:`pyDeco` package, use :func:`pip` as follows:
 
 .. code-block:: bash
 
