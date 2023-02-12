@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "python-deco"
-version = "0.3.12"
+version = "0.3.13"
 description = ""
 authors = ["adrian <tamkayeung.adrian@gmail.com>"]
 readme = "README.md"
