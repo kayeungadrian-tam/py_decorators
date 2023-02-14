@@ -11,7 +11,7 @@ A set of decorators that provide information about a function.
 -------
 
 
-The :func:`timeit` function is a decorator that measures the runtime of a function and logs this information. It wraps the function with a new function that measures the runtime and logs the result.
+The :code:`@timeit` function is a decorator that measures the runtime of a function and logs this information. It wraps the function with a new function that measures the runtime and logs the result.
 
 
 **usage**
@@ -38,7 +38,7 @@ The :func:`timeit` function is a decorator that measures the runtime of a functi
 
 
 
-The :func:`timeit` function is a decorator that measures the memory usage of a function and logs this information. It wraps the function with a new function that measures the memory and logs the result.
+The :code:`@memoryit` function is a decorator that measures the memory usage of a function and logs this information. It wraps the function with a new function that measures the memory and logs the result.
 
 **usage**
 

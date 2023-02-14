@@ -8,7 +8,7 @@ A set of decorators that are related to command line interface (CLI) arguments.
 @cli_yaml
 ---------
 
-The :func:`@cli_yaml` (and :func:`@cli_json` alike) provides a convenient way to read the contents of a YAML file and pass them as arguments to a function directly.
+The :code:`@cli_yaml` (and :code:`@cli_json` alike) provides a convenient way to read the contents of a YAML file and pass them as arguments to a function directly.
 
 **usage**
 
