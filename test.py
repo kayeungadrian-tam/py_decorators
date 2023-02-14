@@ -1,25 +1,73 @@
-from pyDeco.time import timeit
-from pyDeco.debug import stacktrace, inactive, redirect
-
-from time import sleep
+import time
+from pyDeco.info import memoryit
 
 
-def nested_func():
-    print("nested_func called")
+def throttle(max_calls, interval):
+    def decorate(func):
+        last_called = 0
+        calls = 0
+
+        def wrapper(*args, **kwargs):
+            nonlocal last_called, calls
+            print(last_called, calls)
+            elapsed = time.monotonic() - last_called
+            if elapsed < interval:
+                # Throttle the call
+                time.sleep(interval - elapsed)
+            last_called = time.monotonic()
+            calls += 1
+            if calls <= max_calls:
+                # Call the function
+                return func(*args, **kwargs)
+            else:
+                # Exceeded the maximum number of calls
+                raise Exception(
+                    f"Function {func.__name__} exceeded maximum call limit of {max_calls}"
+                )
+
+        return wrapper
+
+    return decorate
 
 
-def inner_func():
-    print("inner called")
-    nested_func()
+def interval(interval_time):
+    def decorate(func):
+        last_called = 0
+
+        def wrapper(*args, **kwargs):
+            nonlocal last_called
+            elapsed = time.monotonic() - last_called
+            if elapsed >= interval_time:
+                last_called = time.monotonic()
+                return func(*args, **kwargs)
+            else:
+                return None
+
+        return wrapper
+
+    return decorate
 
 
-@timeit
+@interval(interval_time=1.0)
 def func():
-    print("func running...")
+    print("starting...", end=" ", flush=True)
+    # time.sleep(1)
+    print("DONE!")
 
-    inner_func()
 
-    print("EOF")
+# for cnt in range(10):
+#     # print(cnt, flush=True)
+
+#     func()
+#     time.sleep(0.5)
+
+
+import numpy as np
+
+
+@memoryit
+def func():
+    np.ones((100, 100, 100), dtype=np.float64)
 
 
 func()

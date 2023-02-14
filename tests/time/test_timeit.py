@@ -1,4 +1,4 @@
-from pyDeco.time import timeit
+from pyDeco.info import timeit
 
 
 def hoge():

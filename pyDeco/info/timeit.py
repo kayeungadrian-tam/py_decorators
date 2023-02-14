@@ -15,7 +15,9 @@ def timeit(func: callable):
         result = func(*args, **kwargs)
         end_time = time.perf_counter()
         total_time = end_time - start_time
-        logger.info(f"Function {func.__name__}() took {total_time:.4f} seconds.")
+        logger.info(
+            f"Function {util.bcolors.BOLD}{func.__name__}(){util.bcolors.ENDC} took {util.bcolors.BOLD}{total_time:.4f}s{util.bcolors.ENDC}."
+        )
 
         return result
 
