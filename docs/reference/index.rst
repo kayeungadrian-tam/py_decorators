@@ -7,3 +7,4 @@ API Reference
     info
     debug
     cli
+    fun
