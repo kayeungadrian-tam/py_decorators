@@ -1,5 +1,6 @@
 import time
 from pyDeco.info import memoryit
+from pyDeco.fun import epic_intro, explode
 
 
 def throttle(max_calls, interval):
@@ -63,11 +64,19 @@ def func():
 
 
 import numpy as np
+import pyfiglet
+import emoji
 
 
-@memoryit
-def func():
-    np.ones((100, 100, 100), dtype=np.float64)
+@explode
+@epic_intro
+def random_func(name):
+
+    int(name)
+
+    # np.ones((100, 100, 100), dtype=np.float64)
+    return name
 
 
-func()
+nae = random_func("shit")
+print(nae)
