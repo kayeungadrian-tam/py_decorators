@@ -13,10 +13,19 @@ class bcolors:
     UNDERLINE = "\033[4m"
 
 
-def init_logger(name: str) -> logging:
-    logging.basicConfig(
-        level=logging.INFO,
-        format="\033[1m\033[94m pyDeco \033[0m | %(levelname)s | %(message)s",
+def init_logger(name: str) -> logging.Logger:
+
+    logger = logging.getLogger(name)
+    logger.setLevel(logging.DEBUG)
+
+    # Create separate handlers and formatters for each log level
+    debug_handler = logging.StreamHandler()
+    debug_handler.setLevel(logging.DEBUG)
+    debug_formatter = logging.Formatter(
+        f"%(asctime)s{bcolors.BOLD}\t{bcolors.OKBLUE}[%(levelname)-5s]{bcolors.ENDC} %(message)s"
     )
-    logging.getLogger(name)
-    return logging
+    debug_handler.setFormatter(debug_formatter)
+
+    logger.addHandler(debug_handler)
+
+    return logger

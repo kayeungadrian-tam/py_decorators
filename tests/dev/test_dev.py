@@ -1,4 +1,4 @@
-from pyDeco.dev import inactive
+from pyDeco.debug import inactive
 
 
 @inactive

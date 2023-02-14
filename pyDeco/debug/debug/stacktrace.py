@@ -22,15 +22,15 @@ def stacktrace(func=None, exclude_files=["logging", ".pyenv", r".*venv"]):
             if file in caller_filename:
                 return  # ignore in ipython notebooks
         if event == "call":
-            logger.info(
-                f"\tExecuting {func_name}, line {line_no}, from {caller_filename}"
+            logger.debug(
+                f"\tExecuting {func_name}(), line {line_no}, from {caller_filename}"
             )
             return tracer_func
 
         return
 
     def decorator(func: callable):
-        logger.info(
+        logger.debug(
             f"{util.bcolors.WARNING}@stacktrace set up for {func.__name__}()...{util.bcolors.ENDC}"
         )
 
