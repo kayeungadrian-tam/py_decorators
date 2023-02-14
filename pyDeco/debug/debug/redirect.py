@@ -25,7 +25,7 @@ def redirect(func=None, line_print: list = None):
                 width = floor(log(len(lines), 10)) + 1
                 for i, line in enumerate(lines):
                     i += 1
-                    logger.info(
+                    logger.debug(
                         f"{i:0{width}}: {line} {inspect.stack()[1][1]} {inspect.stack()[1][2]} "
                     )
 

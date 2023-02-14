@@ -18,13 +18,12 @@ The :func:`timeit` function is a decorator that measures the runtime of a functi
 
 .. code-block:: python
 
-    from time import sleep
     from pyDeco.time import timeit
 
 
     @timeit
     def func():
-        sleep(1)
+        # do something
         
     func()
 
@@ -32,5 +31,5 @@ The :func:`timeit` function is a decorator that measures the runtime of a functi
 **output**
 
 .. parsed-literal::
-    pyDeco  | INFO | Function hoge3() took 0.5007 seconds.
+    2023-02-14 22:07:40,978 [INFO ] Function func() took 0.5007 seconds.
 

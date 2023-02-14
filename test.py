@@ -1,12 +1,24 @@
 from pyDeco.time import timeit
-from pyDeco.debug import stacktrace, inactive
+from pyDeco.debug import stacktrace, inactive, redirect
 
 from time import sleep
 
 
-@inactive
+def nested_func():
+    print("nested_func called")
+
+
+def inner_func():
+    print("inner called")
+    nested_func()
+
+
+@timeit
 def func():
-    sleep(0.5)
+    print("func running...")
+
+    inner_func()
+
     print("EOF")
 
 
