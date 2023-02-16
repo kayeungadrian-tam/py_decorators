@@ -23,6 +23,11 @@ jobs:
         run: |
           echo "Release tag is ${{ github.event.release.tag_name }}"
 
+      - name: Set up PyPI credentials
+        env:
+          TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
+          TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
