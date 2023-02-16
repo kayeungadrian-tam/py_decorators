@@ -30,6 +30,10 @@ jobs:
         env:
           POETRY_VIRTUALENVS_CREATE: false
 
+      - name: Install twine
+        run: |
+          pip install twine
+
       - name: Build package
         run: |
           poetry build
