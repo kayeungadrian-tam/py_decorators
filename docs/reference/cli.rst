@@ -28,7 +28,7 @@ The :code:`@cli_yaml` (and :code:`@cli_json` alike) provides a convenient way to
     @cli_yaml
     def func(name: str, age: int):
         print(f"{name} is {age} years old.")
-    
+
     func()
 
 run command

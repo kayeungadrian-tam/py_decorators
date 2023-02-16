@@ -12,9 +12,8 @@ Time the function.
     @timeit
     def func():
         sleep(1)
-    
+
     func()
 
 .. parsed-literal::
     Function func took 1.0012 seconds
-

@@ -23,7 +23,7 @@ The :code:`@inactive`  is a decorator that allows you to deactivate (temporaily)
     @inactive
     def func():
         ...
-        
+
     func()
 
 **output**
@@ -36,7 +36,7 @@ The :code:`@inactive`  is a decorator that allows you to deactivate (temporaily)
 @redirect
 ---------
 
-The :code:`@redirect`  is a decorator that allows you to 
+The :code:`@redirect`  is a decorator that allows you to
 collect all the printed statements of a function in the order in which were called.
 
 **usage**
@@ -57,9 +57,9 @@ collect all the printed statements of a function in the order in which were call
 
 
 .. parsed-literal::
-    2023-02-14 21:54:26,732 [DEBUG] 1: func running... /mnt/Personal/py_decorators/test.py 20 
-    2023-02-14 21:54:26,732 [DEBUG] 2: -------------------------------- /mnt/Personal/py_decorators/test.py 20 
-    2023-02-14 21:54:26,733 [DEBUG] 3: EOF /mnt/Personal/py_decorators/test.py 20 
+    2023-02-14 21:54:26,732 [DEBUG] 1: func running... /mnt/Personal/py_decorators/test.py 20
+    2023-02-14 21:54:26,732 [DEBUG] 2: -------------------------------- /mnt/Personal/py_decorators/test.py 20
+    2023-02-14 21:54:26,733 [DEBUG] 3: EOF /mnt/Personal/py_decorators/test.py 20
 
 
 @redirect(line_print=<list>)

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "python-deco"
-version = "0.3.18"
+version = "0.3.19"
 description = ""
 authors = ["adrian <tamkayeung.adrian@gmail.com>"]
 readme = "README.md"
@@ -10,7 +10,7 @@ repository = "https://github.com/kayeungadrian-tam/py_decorators"
 homepage = "https://py-decorators.readthedocs.io/en/latest/index.html"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.6"
 pytest = "^7.2.1"
 PyYAML = "^6.0"
 

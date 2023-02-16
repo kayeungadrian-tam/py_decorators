@@ -24,7 +24,7 @@ The :code:`@timeit` function is a decorator that measures the runtime of a funct
     @timeit
     def func():
         # do something
-        
+
     func()
 
 
