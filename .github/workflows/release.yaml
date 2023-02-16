@@ -1,0 +1,20 @@
+name: Publish to Pypi
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.6"
+
+      - name: Use release tag as variable
+        run: |
+          echo "Release tag is ${{ github.event.release.tag_name }}"
