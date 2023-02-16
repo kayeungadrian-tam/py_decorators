@@ -27,21 +27,13 @@ $ pip install python-deco
 
 # :package: Modules
 
-**Info**
+- **Info**: Decorators that provide information about the function.
 
-Decorators that provide information about the function.
+- **Debug**: Decorators that help debug the function.
 
-**Debug**
+- **CLI**: Decorators that uses variables defined in a [yaml/json] file as function arugments.
 
-Decorators that help debug the function.
-
-**CLI**
-
-Decorators that uses variables defined in a [yaml/json] file as function arugments.
-
-**Fun**
-
-Decorators just for FUN!
+- **Fun**: Decorators just for FUN!
 
 # :books: Usage
 
