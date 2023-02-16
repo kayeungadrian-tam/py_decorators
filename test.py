@@ -1,6 +1,6 @@
-import time
-from pyDeco.info import memoryit
-from pyDeco.fun import epic_intro, explode
+from pyDeco.info import memoryit, timeit
+
+# from pyDeco.fun import epic_intro, explode
 
 
 def throttle(max_calls, interval):
@@ -49,11 +49,11 @@ def interval(interval_time):
     return decorate
 
 
-@interval(interval_time=1.0)
-def func():
-    print("starting...", end=" ", flush=True)
-    # time.sleep(1)
-    print("DONE!")
+# @interval(interval_time=1.0)
+# def func():
+#     print("starting...", end=" ", flush=True)
+#     # time.sleep(1)
+#     print("DONE!")
 
 
 # for cnt in range(10):
@@ -68,11 +68,12 @@ import pyfiglet
 import emoji
 
 
-@explode
-@epic_intro
+# @explode
+# @epic_intro
+@timeit
 def random_func(name):
 
-    int(name)
+    # int(name)
 
     # np.ones((100, 100, 100), dtype=np.float64)
     return name

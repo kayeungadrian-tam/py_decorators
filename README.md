@@ -11,13 +11,41 @@
 
 An OSS that has something to do with decorators in python
 
-# Features
+# :sparkles: Features
 
 - Time related decorators
 - Debugging decorators
 - Custom cli input decorators
 
-# Example
+# :hammer: Install
+
+To install, run the following command.
+
+```bash
+$ pip install python-deco
+```
+
+# :package: Modules
+
+**Info**
+
+Decorators that provide information about the function.
+
+**Debug**
+
+Decorators that help debug the function.
+
+**CLI**
+
+Decorators that uses variables defined in a [yaml/json] file as function arugments.
+
+**Fun**
+
+Decorators just for FUN!
+
+# :books: Usage
+
+A quick usage example.
 
 @timeit
 
@@ -32,46 +60,10 @@ def func():
 ```
 
 ```bash
- pyDeco  | INFO | Function func() took 2.0261 seconds.
+2023-02-17 00:05:09,721 [INFO ] Function func() took 2.0120s.
 ```
 
-@stacktrace
-
-```python
-from pyDeco.dev import stacktrace
-
-
-def nested_func():
-    print("nested")
-
-
-def func_b():
-    print("func_b")
-    nested_func()
-
-
-@stacktrace
-def func_a():
-    print("func_a")
-    func_b()
-    return 1
-
-
-func_a()
-```
-
-```terminal
- pyDeco  | INFO | @stacktrace set up for func_a()...
-func_a
- pyDeco  | INFO |       Executing func_b, line 9, from /mnt/Personal/test.py
-func_b
- pyDeco  | INFO |       Executing nested_func, line 5, from /mnt/Personal/test.py
-nested
-```
-
-##
-
-# TODO
+# :construction: TODO
 
 ## credits
 
