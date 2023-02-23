@@ -28,11 +28,8 @@ $ pip install python-deco
 # :package: Modules
 
 - **Info**: Decorators that provide information about the function.
-
 - **Debug**: Decorators that help debug the function.
-
 - **CLI**: Decorators that uses variables defined in a [yaml/json] file as function arugments.
-
 - **Fun**: Decorators just for FUN!
 
 # :books: Usage
@@ -56,6 +53,10 @@ def func():
 ```
 
 # :construction: TODO
+
+- [ ] Update docs
+- [ ] Refactor code
+- [ ] Flowchart Module
 
 ## credits
 
